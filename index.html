@@ -1,134 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<style>
-* {
-  box-sizing: border-box;
-  }
-  @import url("https://fonts.googleapis.com/css2?family=Georama:wght@500;700;900&display=swap");
-body {
-  font-family: "Georama", sans-serif;
-  background: white;
-  }
-
-
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: white;
-}
-
-.symbol {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-    background-color:black;
-}
-.symbol > span {
-    display: block;
-    color: white;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size:10px;
-}
-
-
-/* Right column */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 80px;
-  grid-gap: 13px;
-  background-color: white;
-  padding: 10px;
-}
-
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 13px;
-}
-
-/* Fake image */
-.img {
-  background-image: url("/Css Assignment/mountain.jpg");
-  width: 100vw;
-  height: 100vh;
-  padding: 5px;
-  margin-left:-36px;
-  background-size: cover;
-  position: relative;
-}
-
-.img > h1 {
-    text-align: center;
-}
-
-.img > p {
-    text-align: center;
-}
-
-.img > div {
-    text-align: center;
-}
-
-.Learnmore {
-    background-color: orange;
-    text-align: center;
-    color:black;
-    font-size: 10px;
-    font-weight: bold;
-    margin: 4px 2px;
-    padding: 15px 32px;
-    top: 50%;
-}
-
-.Hireus {
-    background-color: black;
-    text-align: center;
-    color:white;
-    font-size: 10px;
-    font-weight: bold;
-    margin: 4px 2px;
-    padding: 15px 32px;
-    top: 50%;
-}
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.dot {
-  height: 25px;
-  width: 25px;
-  margin-top:5px;
-  background-color: orange;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.footer {
-  padding: 20px;
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Neve | Homepage</title>
 </head>
 <body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <a href="index.html" style="font-size:1rem;"><div class="symbol"><span style="text-decoration: underline;">N</span></div> <b>Neve</b></a>
+      <a href="#"><li>Home</li></a>
+      <a href="#"> <li>About Us</li></a>
+      <li class="dropdown-wrapper">
+        Portfolio
+        <div class="dropdown">
+          <ul>
+            <a href="#"><li>One</li></a>
+            <a href="#"><li>Two</li></a>
+          </ul>
+        </div>
+      </li>
+      <a href="#"> <li>Contact</li></a>
+    </ul>
+
+  </nav>
+
+<!--
 <header>
 <nav class="topnav">
 
@@ -139,6 +38,9 @@ body {
   <a href="contact.php" style="float:right">HOME</a>
 </nav>
 </header>
+-->
+
+
 <div class="row">
 
     <div class="card">
@@ -158,7 +60,7 @@ body {
     <div class="grid-container">
         <div>
           <span class="dot" style="text-align:center">&#10004;</span>
-        <h4>Fixed Price Project</h4>
+        <h4>Fixed Price Projects</h4>
         <h5>Lorem ipsum dolor sit amet, consecteture adipiscing elit. Ut elit tellus.</h5>
         </div>
         <div>
