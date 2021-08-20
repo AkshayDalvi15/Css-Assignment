@@ -93,13 +93,7 @@ body {
     display: block;
   }
  
-section
-{
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-}
+
 
 .grid-container {
   display: grid;
@@ -126,6 +120,14 @@ section
   background-size: cover;
   position: relative;
   align-items: center;
+}
+
+section{
+  display:flex;
+  flex-direction: column; 
+  justify-content:center;
+  align-items:center;
+  margin-top: 25vh;
 }
 
 .img > h1 {
@@ -161,7 +163,15 @@ section
     padding: 15px 32px;
     top: 50%;
 }
+/* Add a card effect for articles 
 
+ .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
 
 .dot {
   height: 25px;
