@@ -93,7 +93,13 @@ body {
     display: block;
   }
  
-
+section
+{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
 
 .grid-container {
   display: grid;
@@ -117,9 +123,9 @@ body {
   width: 100vw;
   height: 70vh;
   padding: 5px;
-  margin-left:-20px;
   background-size: cover;
   position: relative;
+  align-items: center;
 }
 
 .img > h1 {
@@ -155,12 +161,15 @@ body {
     padding: 15px 32px;
     top: 50%;
 }
-/* Add a card effect for articles */
+/* Add a card effect for articles 
+
  .card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+*/
 
 .dot {
   height: 25px;
