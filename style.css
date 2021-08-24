@@ -113,9 +113,9 @@ body {
 
 
 .img {
-  background-image: url("/Css Assignment/mountain.jpg");
-  width: 100vw;
-  height: 70vh;
+  background-image: url("mountain.jpg");
+  min-width: 100vw;
+  min-height: 70vh;
   padding: 5px;
   background-size: cover;
   position: relative;
@@ -127,12 +127,13 @@ section{
   flex-direction: column; 
   justify-content:center;
   align-items:center;
-  margin-top: 25vh;
+  margin-top: 18vh;
 }
 
 section > h1 {
   width: 50%;
-  padding: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 8px;
   font-size: 40px;
   text-align: center;
@@ -140,8 +141,10 @@ section > h1 {
 }
 
 section > p {
-    text-align: center;
-    letter-spacing: 1px;
+  padding-left: 500px;
+  padding-right: 500px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 section > div {
@@ -191,3 +194,83 @@ section > div {
 .footer {
   padding: 20px;
 }   
+
+
+/* ---Media tags --- */
+@media only screen and (min-width:375px) {
+  section > h1 {
+    font-size: 15px;
+      padding-left: 1px;
+      padding-right: 1px;
+  }
+
+  section > p {
+    padding-left: 70px;
+    padding-right: 70px;
+    letter-spacing: 0.1px;
+    font-size: 8px;
+  }
+
+  .Learnmore {
+    font-size: 7px;
+    margin: 4px 2px;
+    padding: 10px 20px;
+}
+
+  .Hireus {
+    font-size: 7px;
+    margin: 4px 2px;
+    padding: 11px 28px;
+  }
+
+  .grid-container {
+    display: inline-block;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .topnav {
+    padding-right: 40px;
+    padding-left: 50px;
+  }
+  
+  section > h1 {
+    width : 100%;
+    font-size: xx-large;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  section > p {
+    padding-left: 180px;
+    padding-right: 180px;
+    letter-spacing: 0.1px;
+    font-size: small;
+  }
+
+  .grid-container {
+    padding: 5px;
+  }
+
+  footer{
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section > h1 {
+    width : 100%;
+    font-size: xx-large;
+    padding-left: 340px;
+    padding-right: 340px;
+  }
+
+  section > p {
+    padding-left: 350px;
+    padding-right: 350px;
+    letter-spacing: 0.5px;
+    font-size: small;
+  }
+}
