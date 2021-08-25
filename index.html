@@ -2,15 +2,20 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Neve | Homepage</title>
 </head>
 <body>
 
-  <div class="topnav">
+  <nav class="topnav">
     <a href="index.html" style="font-size:1rem;"><div class="symbol"><span style="text-decoration: underline;">N</span></div> <b>Neve</b></a>
-    <div class="topnav-right">
+    <a href="javascript:void(0);" class="icon hamburger"  onclick="myFunction()">
+      <i class="fa fa-navicon"></i> 
+    </a>
+    <div class="topnav-right" id="myLinks">
       <a href="#search">HOME</a>
       <a href="#about">ABOUT US</a>
  <!--     <a href="#about">PORTFOLIO</a>    -->
@@ -20,18 +25,17 @@
         </button>
         <div class="dropdown-content">
           <a href="#">Portfolio 1</a>
-          <a href="#">Portfolio 2</a>
+          <a href="#">Portfolio 2</a> 
         </div>
       </div> 
       <a href="#about">CONTACT</a>
     </div>
-  </div>
+  </nav>
 
   <div class="img">
     <section>
-          <h1>Create and grow your website fast, with Neve</h1>
-          <p>programmatically work but low hanging fruit so new economy cross-polllination.</p>
-              <p>Quick sync new economy onward and upward.</p>
+          <h1 > Create and grow your website fast, with Neve </h1>
+           <p>programmatically work but low hanging fruit so new economy cross-polllination. Quick sync new economy onward and upward.</p>
               <div>
               <button type="button" class="Learnmore">LEARN MORE</button>
               <button type="button" class="Hireus">HIRE US</button>
@@ -57,10 +61,20 @@
         </div>
          
       </div>
-  
-  
-
 <div class="footer">
 </div>
+
 </body>
+<!--  JavaScript function for onclick -->
+<script>
+  function myFunction() {
+    const x = document.getElementById("myLinks");
+    console.log(x);
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+  </script>
 </html>
