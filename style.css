@@ -42,7 +42,34 @@ body {
     background-color: #ddd;
     color: black;
   }
+
+  .topnav a.icon  {
+    /* background: white; */
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+  }
+
+  .topnav .icon i {
+      display: block;
+      position: absolute;
+      right: 5%;
+      width: 30px;
+      height: 30px;
+    }
+
+  .topnav a:hover {
+    /* background-color: #ddd; */
+    /* color: black; */
+  }
   
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
   .topnav-right {
     float: right;
   }
@@ -172,15 +199,6 @@ section > div {
     padding: 15px 32px;
     top: 50%;
 }
-/* Add a card effect for articles 
-
- .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
 
 .dot {
   height: 25px;
@@ -198,6 +216,23 @@ section > div {
 
 /* ---Media tags --- */
 @media only screen and (min-width:375px) {
+  .topnav {
+    position: relative;
+  }
+
+  .icon {
+    margin: 0;
+  }
+
+  .icon i {
+    display: block; 
+    position: absolute;
+    top:2px;
+    right:20px;
+    margin: 0;
+  }
+
+  
   section > h1 {
     font-size: 15px;
       padding-left: 1px;
@@ -237,25 +272,42 @@ section > div {
 
   .topnav-right {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+    /* z-index: 10; */
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100vh; 
   }
 
 }
 
 @media only screen and (min-width: 768px) {
   .topnav {
+    display: flex;
     flex-direction: row;
     padding-right: 40px;
     padding-left: 50px;
+    height: 50px;
+    width: auto ;
     justify-content: space-between;
   }
 
   .topnav-right{
+    display: flex;
     flex-direction: row;
+    height: 50px;
+    width: auto;
   }
   
-  section > h1 {
+  .topnav a.icon.hamburger {
+    display: none;
+  }
+
+  section > h1 {  
     width : 100%;
     font-size: xx-large;
     padding-left: 150px;
@@ -281,6 +333,10 @@ section > div {
 }
 
 @media only screen and (min-width: 1024px) {
+  .topnav .icon i {
+    display: none;
+  }
+
   section > h1 {
     width : 100%;
     font-size: xx-large;
