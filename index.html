@@ -16,8 +16,8 @@
       <i class="fa fa-navicon"></i> 
     </a>
     <div class="topnav-right" id="myLinks">
-      <a href="#search">HOME</a>
-      <a href="#about">ABOUT US</a>
+      <a href="#search"><i class="fa fa-home"></i>HOME</a>
+      <a href="#about"><i class="fa fa-user"></i>ABOUT US</a>
  <!--     <a href="#about">PORTFOLIO</a>    -->
       <div class="dropdown">
         <button class="dropbtn">PORTFOLIO 
@@ -28,7 +28,7 @@
           <a href="#">Portfolio 2</a> 
         </div>
       </div> 
-      <a href="#about">CONTACT</a>
+      <a href="#about"><i class="fa fa-envelope"></i>CONTACT</a>
     </div>
   </nav>
 
@@ -67,6 +67,21 @@
 </body>
 <!--  JavaScript function for onclick -->
 <script>
+const icon = document.querySelectorAll('i');
+const width = document.body.clientWidth;
+console.log(width);
+  if(width <= 768) {
+      icon[1].style.display = 'inline-block';
+      icon[2].style.display = 'inline-block';
+      icon[4].style.display = 'inline-block';
+  }
+  
+  else if(width > 769) {
+      icon[1].style.display = 'none';
+      icon[2].style.display = 'none';
+      icon[4].style.display = 'none';
+  }
+
   function myFunction() {
     const x = document.getElementById("myLinks");
     console.log(x);
